@@ -19,14 +19,14 @@
     body {
       margin: 0;
       min-height: 100vh;
-      min-height: 100svh;
-      overflow-x: hidden;
+      display: grid;
+      align-items: center;
       background-image: url("Images/background.jpg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       background-attachment: fixed;
-      color: #f2F1ed;
+      color: #f2f1ed;
       font-family: Arial, Helvetica, sans-serif;
     }
 
@@ -354,146 +354,6 @@
 }
 
 /* MENU ADDITION END */
-
-    /* RESPONSIVE LAYOUT */
-
-body {
-  display: block;
-  min-height: 100vh;
-  min-height: 100svh;
-}
-
-.archive {
-  width: 100%;
-  min-width: 0;
-  margin: 0;
-  height: 100vh;
-     height: 100svh;
-  display: flex;
-  flex-direction: column;
-}
-
-.archive > .site--nav {
-  position: static;
-  padding: 16px clamp(16px, 3vw, 40px) 0;
-  gap: 10px 20px;
-}
-
-.header {
-    grid-template-colmns: mixmax(0, 1fr);
-    gap: 24px;
-    padding: clamp(20px, 3vw, 40px);
-}
-
-h1 {
-  font-size: clamp(42px, 8vw, 120px);
-}
-
-.subtitle {
-  margin-top: 0;
-}
-
-:root {
-  --item-width: clamp(260px, 42v, 600px);
-}
-
-.carousel {
-  flex: 1;
-  min-width: 0;
-  width: 100%;
-  margin-top: 0;
-}
-
-.item {
-  padding: 0 clamp(16px, 4vw, 64px);
-}
-
-.item-area {
-  height: clamp(220px, min(38vw, 50svh), 530px);
-}
-
-figcaption {
-  flex-wwrap: wrap;
-  gap: 8px 16px;
-  padding: 24px 0 30px;
-}
-
-.footer {
-    fkex-shrink: 0;
-    margin-top: 0;
-    flex-wrap: wrap;
-    padding: 16px clamp(16px, 3vw, 40px);
-}
-
-.hover-card {
-  width: min(22vw, 360px, 54vh);
-}
-
-    @media (max-width: 760px) {
-      :root {
-        --item-width: 85vw:
-    }
-
-    body {
-      background-attachment: scroll;
-    }
-
-   .archbie > site-nav {
-     justify-content: flex-start;
-     gap: 10px 16px;
-   }
-
-  .header {
-    padding: 24px 20px;
-  }
-
-  h1 {
-    font-size: clamp(42px, 10vw, 76px);
-  }
-
-  .subtitle {
-    font-size: 12px;
-  }
-
-  .item {
-    padding: 0 20px;
-  }
-
-  .item-area {
-    height: clamp(200px, min(65vw, 50svh), 380px);
-  }
-
-  .footer {
-    padding: 14px 20px;
-  }
-    }
-    
- .header,
- .archive > .site-nav {
-   flex-shrink: 0;
- }
-
- .track,
- .group {
-   height: 100%;
- }
-
- .item {
-   height: 100%;
-   display: flex;
-   flex-direction: column;
- }
-
- figcaption {
-   flex-shrink: 0;
- }
-
-@media (max-width: 760px) {
-  .image-area {
-    height: auto;
-  }
-}
-    
   </style>
 </head>
 
