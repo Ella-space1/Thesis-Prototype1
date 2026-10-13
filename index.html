@@ -355,7 +355,37 @@
 
 /* MENU ADDITION END */
 
+.archive {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
 
+/* 위쪽에 그대로 배치 */
+.header {
+  flex-shrink: 0;
+}
+
+/* 크기는 유지하고, 위아래 남는 공간을 동일하게 배분 */
+.carousel {
+  flex-shrink: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* 아래쪽에 배치 */
+.footer {
+  flex-shrink: 0;
+}
+
+/* 기존 모바일 바깥 여백 제거 */
+@media (max-width: 760px) {
+  .archive {
+    width: 100%;
+    margin: 0;
+  }
+}
   </style>
 </head>
 
