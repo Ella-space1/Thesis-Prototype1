@@ -367,8 +367,8 @@ body {
   width: 100%;
   min-width: 0;
   margin: 0;
-  min-height: 100vh;
-  min-height: 100svh;
+  height: 100vh;
+     height: 100svh;
   display: flex;
   flex-direction: column;
 }
@@ -398,16 +398,17 @@ h1 {
 }
 
 .carousel {
+  flex: 1;
   min-width: 0;
   width: 100%;
-  margin-top: clamp(12px, 3vh, 36px);
+  margin-top: 0;
 }
 
 .item {
   padding: 0 clamp(16px, 4vw, 64px);
 }
 
-.item-are {
+.item-area {
   height: clamp(220px, min(38vw, 50svh), 530px);
 }
 
@@ -417,11 +418,12 @@ figcaption {
   padding: 24px 0 30px;
 }
 
-.footer (
-    margin-top: auto;
+.footer {
+    fkex-shrink: 0;
+    margin-top: 0;
     flex-wrap: wrap;
     padding: 16px clamp(16px, 3vw, 40px);
-)
+}
 
 .hover-card {
   width: min(22vw, 360px, 54vh);
@@ -466,7 +468,31 @@ figcaption {
   }
     }
     
+ .header,
+ .archive > .site-nav {
+   flex-shrink: 0;
+ }
 
+ .track,
+ .group {
+   height: 100%;
+ }
+
+ .item {
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+ }
+
+ figcaption {
+   flex-shrink: 0;
+ }
+
+@media (max-width: 760px) {
+  .image-area {
+    height: auto;
+  }
+}
     
   </style>
 </head>
