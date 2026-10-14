@@ -159,14 +159,26 @@
     }
 
     .tile .media {
-        min-height: 0;
-        aspect-ratio: 1;
-        padding: 14px
-    }
+  display: block;
+  margin: 0;
+  min-height: 0;
+  height: auto;
+  aspect-ratio: auto;
+  padding: 0;
+  background: transparent;
+  border: 0;
+}
 
-    .tile:hover .media {
-        border-color: #c7c9bd
-    }
+    .tile .media img {
+  display: block;
+  position: static;
+  transform: none;
+  width: 100%;
+  height: auto;
+  max-height: none;
+}
+
+
 
     .tile h2 {
         font-size: 16px;
